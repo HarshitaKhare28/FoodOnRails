@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ChooseFood">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="331dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="  FoodOnRails"
+            android:textColor="#9C27B0"
+            android:textColorLink="#9C27B0"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="City:"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/input_city"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/input_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="84dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/city"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/burger"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="208dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/pizza"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/burger" />
+
+        <ImageButton
+            android:id="@+id/pizza"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="24dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pizza" />
+
+        <ImageButton
+            android:id="@+id/momos"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="56dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/noodles"
+            android:layout_marginStart="65dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/burger"
+            app:srcCompat="@drawable/momos" />
+
+        <ImageButton
+            android:id="@+id/dosa"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noodles"
+            app:srcCompat="@drawable/dosa" />
+
+        <ImageButton
+            android:id="@+id/pasta"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="35dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/dosa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/momos"
+            app:srcCompat="@drawable/pasta" />
+
+        <ImageButton
+            android:id="@+id/noodles"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="24dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pizza"
+            app:srcCompat="@drawable/noodles" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
