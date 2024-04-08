@@ -52,6 +52,7 @@ public class ChooseFood extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChooseFood.this, OtpSMSActivity.class);
                 intent.putExtra("cost","150");
+                intent.putExtra("item","Burger");
                 startActivity(intent);
             }
         });
@@ -61,6 +62,7 @@ public class ChooseFood extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChooseFood.this, OtpSMSActivity.class);
                 intent.putExtra("cost","300");
+                intent.putExtra("item","Pizza");
                 startActivity(intent);
             }
         });
@@ -70,6 +72,7 @@ public class ChooseFood extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChooseFood.this, OtpSMSActivity.class);
                 intent.putExtra("cost","100");
+                intent.putExtra("item","Momos");
                 startActivity(intent);
             }
         });
@@ -79,6 +82,7 @@ public class ChooseFood extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChooseFood.this, OtpSMSActivity.class);
                 intent.putExtra("cost","70");
+                intent.putExtra("item","Dosa");
                 startActivity(intent);
             }
         });
@@ -88,6 +92,7 @@ public class ChooseFood extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChooseFood.this, OtpSMSActivity.class);
                 intent.putExtra("cost","170");
+                intent.putExtra("item","Noodles");
                 startActivity(intent);
             }
         });
@@ -97,6 +102,7 @@ public class ChooseFood extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChooseFood.this, OtpSMSActivity.class);
                 intent.putExtra("cost","300");
+                intent.putExtra("item","Pasta");
                 intent.putExtra("phoneNo", (String) null);
                 startActivity(intent);
             }

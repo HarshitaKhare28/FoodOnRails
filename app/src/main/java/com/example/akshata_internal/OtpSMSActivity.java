@@ -58,6 +58,7 @@ public class OtpSMSActivity extends AppCompatActivity {
         Intent receive = getIntent();
         String cost = "Amount: " + (receive.getStringExtra("cost"));
         String phoneNumber = receive.getStringExtra("phoneNo");
+        String item = receive.getStringExtra("item");
         phone.setText(phoneNumber);
         amount.setText(cost);
 
@@ -89,7 +90,7 @@ public class OtpSMSActivity extends AppCompatActivity {
                 if (enter_otp.getText().toString().trim().equalsIgnoreCase("7516")) {
                     Toast.makeText(getApplicationContext(), "Correct OTP", Toast.LENGTH_LONG).show();
                     sendOrderConfirmedNotification();
-                    openNotificationCheckerActivity();
+                    openNotificationCheckerActivity(item);
                 }
             }
         });
@@ -111,8 +112,9 @@ public class OtpSMSActivity extends AppCompatActivity {
         }
     }
 
-    private void openNotificationCheckerActivity() {
+    private void openNotificationCheckerActivity(String item) {
         Intent intent = new Intent(this, OrderConfirmed.class);
+        intent.putExtra("item",item);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT | PendingIntent.FLAG_IMMUTABLE);
 

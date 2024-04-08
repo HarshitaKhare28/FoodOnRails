@@ -27,6 +27,25 @@ public class my_db extends SQLiteOpenHelper {
                 COL_4 + " TEXT)");
     }
 
+//    public String[] getNameAndPhoneByItem(String item) {
+//        SQLiteDatabase db = this.getReadableDatabase();
+//        String[] result = new String[2]; // Array to hold name and phone number
+//        Cursor cursor = db.query(TABLE_NAME, new String[]{COL_1, COL_3}, COL_4 + "=?", new String[]{item}, null, null, null);
+//        if (cursor != null) {
+//            if (cursor.moveToFirst()) {
+//                int nameIndex = cursor.getColumnIndex(COL_1);
+//                int phoneIndex = cursor.getColumnIndex(COL_3);
+//                if (nameIndex != -1 && phoneIndex != -1) {
+//                    result[0] = cursor.getString(nameIndex); // Name
+//                    result[1] = cursor.getString(phoneIndex); // Phone number
+//                }
+//            }
+//            cursor.close();
+//        }
+//        db.close();
+//        return result;
+//    }
+
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
