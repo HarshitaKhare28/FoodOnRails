@@ -10,6 +10,6 @@ FoodOnRails is a collaborative Android Studio project that allows passengers to 
 - Android Studio
 - Java
 - SQLite Database
-- 
+  
 ## Contributors
 - [akshataaak](https://github.com/akshataaak)
